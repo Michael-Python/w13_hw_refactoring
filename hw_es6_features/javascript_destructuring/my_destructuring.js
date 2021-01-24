@@ -1,4 +1,4 @@
-const names = ["Fred", "Shaggy", "Velma", "Daphne", "Scooby"];
+// const names = ["Fred", "Shaggy", "Velma", "Daphne", "Scooby"];
 // console.log(names);
 
 // const fred = names[0];
@@ -11,5 +11,17 @@ const names = ["Fred", "Shaggy", "Velma", "Daphne", "Scooby"];
 // const [fred,,,daphne] = names;
 // console.log(daphne);
 
-const [fred,,, ...remainingNames] = names;
-console.log(remainingNames);
+// const [fred,,, ...remainingNames] = names;
+// console.log(remainingNames);
+
+const person = {
+    name: "Joni",
+    age: 76
+  }
+//   const name = person.name;
+//   const age = person["age"];
+
+const {namenam, age} = person;
+  
+  console.log(name);
+  console.log(age);
