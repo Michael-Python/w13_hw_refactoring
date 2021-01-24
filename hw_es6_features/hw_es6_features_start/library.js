@@ -1,4 +1,3 @@
-let books = [];
 
 
 // const Library = function (books = []) {
@@ -6,7 +5,7 @@ let books = [];
 // };
 
 class Library {
-  constructor(){
+  constructor(books = []){
     this.books = books;
   }
 
