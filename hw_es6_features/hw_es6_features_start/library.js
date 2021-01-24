@@ -1,9 +1,3 @@
-
-
-// const Library = function (books = []) {
-//   this.books = books;
-// };
-
 class Library {
   constructor(books = []){
     this.books = books;
@@ -19,36 +13,17 @@ class Library {
   }
 
   addBooks(newBooks){
-    newBooks.forEach(book => this.books.push(book));
+    this.books = [...this.books, ...newBooks];
   }
 
-  printInventory(){
-    this.books.forEach((book) => {
-      console.log(`${book.title} by ${book.author}`);
+  printInventory() {
+    this.books.forEach(({ author, title }) => {
+      console.log(`${title} by ${author}`);
     });
-
   }
 }
 
-// Library.prototype.bookCount = function () {
-//   return this.books.length;
-// };
 
-
-
-// Library.prototype.addBook = function (newBook) {
-//   this.books.push(newBook);
-// };
-
-// Library.prototype.addBooks = function (newBooks) {
-//   newBooks.forEach(book => this.books.push(book));
-// };
-
-// Library.prototype.printInventory = function () {
-//   this.books.forEach((book) => {
-//     console.log(`${book.title} by ${book.author}`);
-//   });
-// };
 // var book = newBook;
-module.exports = Library;
-// export {books} from Library{};
+// module.exports = Library;
+export default Library;
